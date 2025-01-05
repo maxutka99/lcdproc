@@ -95,10 +95,10 @@ void i2c_HD44780_senddata(PrivateData *p, unsigned char displayID, unsigned char
 void i2c_HD44780_backlight(PrivateData *p, unsigned char state);
 void i2c_HD44780_close(PrivateData *p);
 
-#define RS	0x10
-#define RW	0x20
-#define EN	0x40
-#define BL	0x80
+#define RS	0x01
+#define RW	0x02
+#define EN	0x04
+#define BL	0x00
 #define D4	0x01
 #define D5	0x02
 #define D6	0x04
